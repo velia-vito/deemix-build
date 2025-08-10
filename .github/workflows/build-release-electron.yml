@@ -10,6 +10,7 @@ on:
     paths:
       - gui/CHANGELOG.md
       - .github/workflows/build-release-electron.yml
+  workflow_dispatch:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
